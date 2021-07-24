@@ -3,7 +3,7 @@ variable "external_port" {
 
   validation {
     condition = var.external_port <= 65535 && var.external_port > 0
-    error_message = "The external port must be in the range of 0 - 65535."
+    error_message = "Our external port must be in the range of 0 - 65535."
   }
 }
 
